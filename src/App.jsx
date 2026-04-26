@@ -85,7 +85,7 @@ function App() {
           <h1 className="text-6xl md:text-7xl font-rose text-[#DC143C]/90 leading-[0.7] lowercase font-normal">
             red
           </h1>
-          <h1 className="text-2xl md:text-3xl font-tales text-gray-700/80 tracking-[0.2em] uppercase font-medium">
+          <h1 className="text-2xl md:text-3xl font-tales text-gray-700/80 tracking-[0.2em] uppercase font-normal">
             Tales
           </h1>
         </motion.div>
@@ -110,7 +110,7 @@ function App() {
                      flex items-center gap-3 group w-fit"
         >
           <TreePine size={24} className="group-hover:text-emerald-500 transition-colors" />
-          <span className="text-base font-semibold tracking-wide">Tree</span>
+          <span className="text-base font-medium tracking-wide">Tree</span>
         </button>
 
         <button
@@ -120,7 +120,7 @@ function App() {
                      flex items-center gap-3 group w-fit"
         >
           <Sparkles size={24} className="group-hover:text-pink-400 transition-colors" />
-          <span className="text-base font-semibold tracking-wide">Monthly Wrap</span>
+          <span className="text-base font-medium tracking-wide">Monthly Wrap</span>
         </button>
       </div>
 

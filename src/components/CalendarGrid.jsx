@@ -12,7 +12,7 @@ const CalendarGrid = ({ currentMonth, selectedDate, onDateSelect, lastPeriodStar
       {/* Weekday Headers */}
       <div className="grid grid-cols-7 mb-6">
         {weekDays.map((day, i) => (
-          <div key={`${day}-${i}`} className="text-center text-[13px] font-bold text-gray-400 uppercase tracking-[0.3em]">
+          <div key={`${day}-${i}`} className="text-center text-[13px] font-medium text-gray-400 uppercase tracking-[0.3em]">
             {day}
           </div>
         ))}

@@ -59,7 +59,7 @@ const CalendarSidebar = ({ selectedDate, onDateSelect, lastPeriodStart }) => {
                  p === 'follicular' ? 'bg-orange-300' : 
                  p === 'ovulation' ? 'bg-amber-300' : 'bg-indigo-300'}`} 
              />
-             <span className="text-[11px] font-bold text-gray-400 uppercase tracking-widest">
+             <span className="text-[11px] font-medium text-gray-400 uppercase tracking-widest">
                {p.slice(0, 3)}
              </span>
            </div>

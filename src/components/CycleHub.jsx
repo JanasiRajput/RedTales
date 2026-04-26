@@ -39,7 +39,7 @@ const CycleHub = ({ cycleData, onUpdate, isEditing, setIsEditing }) => {
             <div className="space-y-8">
               {/* Date Input */}
               <div className="space-y-4">
-                <label className="text-[13px] font-bold text-gray-400 uppercase tracking-widest flex items-center gap-3">
+                <label className="text-[13px] font-medium text-gray-400 uppercase tracking-widest flex items-center gap-3">
                   <Calendar size={18} /> Last Period Started
                 </label>
                 <input
@@ -52,7 +52,7 @@ const CycleHub = ({ cycleData, onUpdate, isEditing, setIsEditing }) => {
 
               {/* Duration Input */}
               <div className="space-y-4">
-                <label className="text-[13px] font-bold text-gray-400 uppercase tracking-widest flex items-center gap-3">
+                <label className="text-[13px] font-medium text-gray-400 uppercase tracking-widest flex items-center gap-3">
                   <Info size={18} /> Period Duration (Days)
                 </label>
                 <div className="flex items-center gap-6">
@@ -71,7 +71,7 @@ const CycleHub = ({ cycleData, onUpdate, isEditing, setIsEditing }) => {
               <button
                 disabled={!tempDate}
                 onClick={handleSave}
-                className={`w-full py-6 rounded-3xl font-bold text-lg shadow-lg flex items-center justify-center gap-4 transition-all
+                className={`w-full py-6 rounded-3xl font-medium text-lg shadow-lg flex items-center justify-center gap-4 transition-all
                            ${tempDate ? 'bg-gray-800 text-white hover:scale-[1.02] active:scale-95' : 'bg-gray-100 text-gray-400 cursor-not-allowed'}`}
               >
                 <Check size={24} />
@@ -118,7 +118,7 @@ const CycleHub = ({ cycleData, onUpdate, isEditing, setIsEditing }) => {
 
               {/* Center Info */}
               <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
-                <span className="text-[12px] font-bold text-gray-400 uppercase tracking-[0.4em] mb-2">Day</span>
+                <span className="text-[12px] font-medium text-gray-400 uppercase tracking-[0.4em] mb-2">Day</span>
                 <motion.span 
                   initial={{ scale: 0.5, opacity: 0 }}
                   animate={{ scale: 1, opacity: 1 }}
@@ -126,7 +126,7 @@ const CycleHub = ({ cycleData, onUpdate, isEditing, setIsEditing }) => {
                 >
                   {state.cycleDay}
                 </motion.span>
-                <span className="text-[14px] font-bold text-gray-500 mt-2 uppercase tracking-[0.3em]">{state.phaseId}</span>
+                <span className="text-[14px] font-medium text-gray-500 mt-2 uppercase tracking-[0.3em]">{state.phaseId}</span>
               </div>
               
               {/* Current Pos Glow */}
@@ -149,7 +149,7 @@ const CycleHub = ({ cycleData, onUpdate, isEditing, setIsEditing }) => {
               className="mt-10 text-center p-6 glass rounded-3xl border border-white/40 shadow-sm"
             >
               <p className="text-lg text-gray-500 font-normal">
-                Your next period is predicted for <span className="font-bold text-gray-700">{format(state.nextPeriod, 'MMMM d')}</span>
+                Your next period is predicted for <span className="font-semibold text-gray-700">{format(state.nextPeriod, 'MMMM d')}</span>
               </p>
             </motion.div>
 

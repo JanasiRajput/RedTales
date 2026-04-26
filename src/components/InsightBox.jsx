@@ -14,7 +14,7 @@ const InsightBox = ({ date, lastPeriodStart }) => {
       <div className="flex items-start gap-3">
         <div className="text-xl">🔮</div>
         <div className="space-y-1">
-          <h4 className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Today's Insight</h4>
+          <h4 className="text-[10px] font-medium text-gray-400 uppercase tracking-widest">Today's Insight</h4>
           <AnimatePresence mode="wait">
             <motion.p
               key={insight}

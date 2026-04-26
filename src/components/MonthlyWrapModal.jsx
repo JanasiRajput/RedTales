@@ -25,7 +25,7 @@ const MonthlyWrapModal = ({ isOpen, onClose, cycleData, reflections }) => {
           >
             {/* Header Area */}
             <div className="absolute top-12 text-center pointer-events-none">
-              <span className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.6em] mb-4 block">Monthly Journey</span>
+              <span className="text-[10px] font-medium text-gray-400 uppercase tracking-[0.6em] mb-4 block">Monthly Journey</span>
               <h2 className="text-4xl font-tales text-gray-800 font-light tracking-widest">Your Wrap</h2>
             </div>
 

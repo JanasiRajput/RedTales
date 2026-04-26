@@ -60,7 +60,7 @@ const CharacterCard = ({ phase, onClick, onPlusClick, isActive, showFeedback }) 
               transition={{ type: "spring", stiffness: 300, damping: 30 }}
               className="px-4 py-1.5 rounded-full bg-gray-800/5 border border-gray-800/10"
             >
-              <span className="text-[12px] font-bold text-gray-400 uppercase tracking-[0.3em]">Now</span>
+              <span className="text-[12px] font-medium text-gray-400 uppercase tracking-[0.3em]">Now</span>
             </motion.div>
           )}
         </AnimatePresence>
@@ -154,7 +154,7 @@ const CharacterCard = ({ phase, onClick, onPlusClick, isActive, showFeedback }) 
 
       {/* Label */}
       <motion.span 
-        className={`text-lg font-bold tracking-[0.2em] uppercase transition-colors duration-500
+        className={`text-lg font-medium tracking-[0.2em] uppercase transition-colors duration-500
                    ${isActive || showFeedback ? 'text-gray-800' : 'text-gray-500'}`}
       >
         {phase.name.split(' ')[0]}

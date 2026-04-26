@@ -54,7 +54,7 @@ const MonthlyWrap = ({ cycleData, reflections }) => {
         animate={{ opacity: 1, y: 0 }}
         className="text-center mb-12 relative z-10"
       >
-        <h3 className="text-xs font-bold text-gray-400 uppercase tracking-[0.6em] mb-2">Your Month in Motion</h3>
+        <h3 className="text-xs font-medium text-gray-400 uppercase tracking-[0.6em] mb-2">Your Month in Motion</h3>
         <h2 className="text-5xl font-rose text-[#DC143C]/80">The Reveal</h2>
       </motion.div>
 
@@ -81,7 +81,7 @@ const MonthlyWrap = ({ cycleData, reflections }) => {
 
         {/* Mood Snapshot - Layered Card */}
         <ScrapbookElement rotation={-8} delay={0.7} className="left-4 top-32 w-56 p-5 bg-white shadow-lg border border-gray-100 z-20">
-          <h4 className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-4">Mood Snapshot</h4>
+          <h4 className="text-[10px] font-medium text-gray-400 uppercase tracking-widest mb-4">Mood Snapshot</h4>
           <div className="flex items-center gap-3 mb-2">
             <span className="text-2xl">
               {persona.id === 'happy' ? '☀️' : 
@@ -99,13 +99,13 @@ const MonthlyWrap = ({ cycleData, reflections }) => {
 
         {/* Insight Snippets - Scattered around */}
         <ScrapbookElement rotation={12} delay={0.9} className="left-20 bottom-20 z-10">
-          <div className="px-4 py-2 bg-emerald-50 text-emerald-600 rounded-full text-[10px] font-bold uppercase tracking-widest shadow-sm border border-emerald-100">
+          <div className="px-4 py-2 bg-emerald-50 text-emerald-600 rounded-full text-[10px] font-medium uppercase tracking-widest shadow-sm border border-emerald-100">
             {summary.totalReflections} Reflections
           </div>
         </ScrapbookElement>
 
         <ScrapbookElement rotation={-5} delay={1.1} className="right-20 bottom-32 z-10">
-          <div className="px-4 py-2 bg-pink-50 text-pink-600 rounded-full text-[10px] font-bold uppercase tracking-widest shadow-sm border border-pink-100 flex items-center gap-2">
+          <div className="px-4 py-2 bg-pink-50 text-pink-600 rounded-full text-[10px] font-medium uppercase tracking-widest shadow-sm border border-pink-100 flex items-center gap-2">
             <Heart size={12} /> Unique Rhythm
           </div>
         </ScrapbookElement>
