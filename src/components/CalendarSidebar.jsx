@@ -13,11 +13,11 @@ const CalendarSidebar = ({ selectedDate, onDateSelect, lastPeriodStart }) => {
 
   return (
     <div
-      className="h-full w-[400px] md:w-[440px]
-                 p-10 pt-16 flex flex-col glass rounded-[3rem] border-2 border-white/40 shadow-2xl overflow-hidden"
+      className="h-full w-full md:w-[400px] lg:w-[440px]
+                 p-6 md:p-10 pt-16 flex flex-col glass rounded-[3rem] border-2 border-white/40 shadow-2xl overflow-hidden"
     >
       {/* Header */}
-      <div className="flex items-center justify-between mb-10">
+      <div className="flex items-center justify-between mb-6 md:mb-10">
         <h2 className="text-3xl font-tales text-gray-700 font-medium lowercase tracking-wide">
           {format(currentMonth, 'MMMM yyyy')}
         </h2>

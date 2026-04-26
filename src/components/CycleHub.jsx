@@ -29,11 +29,11 @@ const CycleHub = ({ cycleData, onUpdate, isEditing, setIsEditing }) => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="glass p-12 rounded-[4rem] border border-white/50 shadow-2xl space-y-10"
+            className="glass p-8 md:p-12 rounded-[3rem] md:rounded-[4rem] border border-white/50 shadow-2xl space-y-6 md:space-y-10"
           >
-            <div className="text-center space-y-3">
-              <h3 className="text-3xl font-medium text-gray-800 tracking-tight">Your Cycle Hub</h3>
-              <p className="text-base text-gray-400">Let's set up your tracking</p>
+            <div className="text-center space-y-2 md:space-y-3">
+              <h3 className="text-2xl md:text-3xl font-medium text-gray-800 tracking-tight">Your Cycle Hub</h3>
+              <p className="text-sm md:text-base text-gray-400">Let's set up your tracking</p>
             </div>
 
             <div className="space-y-8">
@@ -46,7 +46,7 @@ const CycleHub = ({ cycleData, onUpdate, isEditing, setIsEditing }) => {
                   type="date"
                   value={tempDate}
                   onChange={(e) => setTempDate(e.target.value)}
-                  className="w-full p-6 rounded-3xl bg-white/50 border-2 border-transparent focus:border-pink-200 focus:bg-white outline-none transition-all text-xl text-gray-700 font-medium"
+                  className="w-full p-4 md:p-6 rounded-2xl md:rounded-3xl bg-white/50 border-2 border-transparent focus:border-pink-200 focus:bg-white outline-none transition-all text-lg md:text-xl text-gray-700 font-medium"
                 />
               </div>
 
@@ -71,7 +71,7 @@ const CycleHub = ({ cycleData, onUpdate, isEditing, setIsEditing }) => {
               <button
                 disabled={!tempDate}
                 onClick={handleSave}
-                className={`w-full py-6 rounded-3xl font-medium text-lg shadow-lg flex items-center justify-center gap-4 transition-all
+                className={`w-full py-4 md:py-6 rounded-2xl md:rounded-3xl font-bold text-base md:text-lg shadow-lg flex items-center justify-center gap-4 transition-all
                            ${tempDate ? 'bg-gray-800 text-white hover:scale-[1.02] active:scale-95' : 'bg-gray-100 text-gray-400 cursor-not-allowed'}`}
               >
                 <Check size={24} />
@@ -87,9 +87,9 @@ const CycleHub = ({ cycleData, onUpdate, isEditing, setIsEditing }) => {
             exit={{ opacity: 0, scale: 1.05 }}
             className="relative flex flex-col items-center"
           >
-            {/* Progress Arc (Scaled Up) */}
-            <div className="relative w-80 h-80 flex items-center justify-center">
-              <svg className="w-full h-full -rotate-90">
+            {/* Progress Arc (Scaled Responsive) */}
+            <div className="relative w-64 h-64 md:w-80 md:h-80 flex items-center justify-center">
+              <svg className="w-full h-full -rotate-90" viewBox="0 0 320 320">
                 {/* Background Ring */}
                 <circle
                   cx="160"
@@ -122,7 +122,7 @@ const CycleHub = ({ cycleData, onUpdate, isEditing, setIsEditing }) => {
                 <motion.span 
                   initial={{ scale: 0.5, opacity: 0 }}
                   animate={{ scale: 1, opacity: 1 }}
-                  className="text-8xl font-rose text-gray-800 leading-none"
+                  className="text-6xl md:text-8xl font-rose text-gray-800 leading-none"
                 >
                   {state.cycleDay}
                 </motion.span>

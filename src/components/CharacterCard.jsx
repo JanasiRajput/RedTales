@@ -25,9 +25,9 @@ const CharacterCard = ({ phase, onClick, onPlusClick, isActive, showFeedback }) 
 
   // Uniform sizes for all cards (Scaled down slightly)
   const sizes = {
-    container: "w-36 h-52 md:w-48 md:h-68",
-    inner: "w-32 h-44 md:w-44 md:h-60",
-    radius: "rounded-[3rem]"
+    container: "w-28 h-40 md:w-48 md:h-68",
+    inner: "w-24 h-32 md:w-44 md:h-60",
+    radius: "rounded-[2rem] md:rounded-[3rem]"
   };
 
   // Custom scale for the character picture itself
